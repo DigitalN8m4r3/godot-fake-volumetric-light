@@ -5,3 +5,8 @@
 ## About
 
 A simple shader solution for faking volumetric light in Godot. It's great for conical or cylindrical shapes, like for flashlights. Be careful with performance since it uses depth texture for smooth out camera approximation and intersections with other objects.
+
+## Updated to Godot 4.x.x
+
+this shader solution was updated to work with the current and latest of Godot 4.
+

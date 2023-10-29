@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=3 uid="uid://b8efryx0lteh1"]
+
+[ext_resource type="Material" uid="uid://d182j6p177cdb" path="res://Fake Volumetric Light/volume.material" id="1_y7ie4"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_an1ce"]
+top_radius = 5.0
+height = 15.0
+radial_segments = 32
+rings = 12
+cap_bottom = false
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_kqyxw"]
+flip_faces = true
+top_radius = 5.0
+height = 15.0
+radial_segments = 32
+rings = 12
+cap_bottom = false
+
+[node name="FakeLamp" type="Node3D"]
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 0, 7.5, 0)
+mesh = SubResource("CylinderMesh_an1ce")
+surface_material_override/0 = ExtResource("1_y7ie4")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 0, 7.5, 0)
+mesh = SubResource("CylinderMesh_kqyxw")
+surface_material_override/0 = ExtResource("1_y7ie4")
