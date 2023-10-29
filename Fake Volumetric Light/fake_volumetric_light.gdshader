@@ -25,5 +25,5 @@ void fragment() {
 
     ALBEDO = base_color.rgb * particle.rgb * color.rgb * proximity_fade_distance;
     EMISSION = ALBEDO * brightness;
-    ALPHA = particle.a * pow(UV.y, 1) * pow(basic_fresnel, 15.25);
+    ALPHA = particle.a * pow(UV.y, 1) * pow(basic_fresnel, brightness);
 }
